@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Installation function for Random Cat Images
+ */
+
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install()
+ */
+
+function api_consumer_install()
+{
+  user_role_change_permissions(RoleInterface::ANONYMOUS_ID, [
+    'slang it up' => TRUE,
+  ]);
+}

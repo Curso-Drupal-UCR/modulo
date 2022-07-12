@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Module help file for Random Cat Images
+ */
+
+use \Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help()
+ */
+function api_consumer_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.api_consumer':
+      return t('
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="py-3 mt-5">How to use Randon Cat Image Module</h2>
+              <p>Use this module is really ease. You only need to activate de module in extensions and place the block in the block layout management, where you can configure what pages can see the block. When this ready, search the block in the page selected before and press the button (Get Other Cat Here) and enjoy your free cats</p>
+            </div>
+          </div>
+        </div>
+       ');
+  }
+}

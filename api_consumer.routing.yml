@@ -1,0 +1,7 @@
+api_consumer.content:
+  path: '/randomcat'
+  defaults:
+    _controller: '\Drupal\api_consumer\Controller\RandomCatController::get_random_cat'
+    _title: 'Random Cat Images'
+  requirements:
+    _permission: 'slang it up'

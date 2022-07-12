@@ -1,0 +1,6 @@
+name: Random Cat Image
+type: module
+description: "This is a custom module"
+package: Custom Modules
+core_version_requirement: ^8 || ^9
+version: 1.0.0
